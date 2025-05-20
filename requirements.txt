@@ -1,0 +1,5 @@
+ultralytics
+boto3
+flask
+werkzeug
+opencv-python-headless
