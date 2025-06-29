@@ -33,7 +33,7 @@ for bucket in [MINIO_BUCKET, MINIO_BUCKET_MEDIA]:
         s3.create_bucket(Bucket=bucket)
 
 # Chargement du modèle YOLOv8n
-model = YOLO('yolov8n-face.pt')  # Modèle spécifique pour la détection de visages
+model = YOLO('yolo-face-detector.pt')  # Modèle spécifique pour la détection de visages
 
 def process_image_file(local_image_path, media_id):
     """Traite une image locale pour détecter les visages et les sauvegarder sur MinIO."""
